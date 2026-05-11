@@ -1,0 +1,365 @@
+/* ══ MODALIDADE PAGES ══ */
+
+/* ── Hero ── */
+.mod-hero {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 80px;
+  background: url('../src/img/hero.png') center 40% / cover no-repeat;
+  overflow: hidden;
+}
+.mod-hero-ov {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,.92) 0%, rgba(10,10,10,.55) 60%, rgba(10,10,10,.3) 100%);
+}
+.mod-hero-stripe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(to bottom, var(--yellow), transparent);
+  opacity: .7;
+}
+.mod-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: calc(var(--nav-h) + 40px);
+}
+.mod-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 28px;
+  transition: color .2s;
+}
+.mod-back:hover { color: var(--yellow); }
+.mod-hero-emoji {
+  font-size: 52px;
+  margin-bottom: 14px;
+  display: block;
+}
+.mod-hero-content .sec-label { color: var(--yellow); }
+.mod-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(60px, 10vw, 110px);
+  line-height: .88;
+  letter-spacing: .02em;
+  color: var(--white);
+  margin-bottom: 22px;
+}
+.mod-hero-sub {
+  font-size: clamp(14px, 1.6vw, 17px);
+  line-height: 1.7;
+  color: rgba(255,255,255,.78);
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+
+/* ── Sections ── */
+.mod-sec {
+  padding: 100px 0;
+  background: var(--white);
+}
+.mod-sec-cream { background: var(--cream); }
+.mod-sec-yellow { background: var(--yellow); }
+
+.mod-sec-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* ── Two-col layout ── */
+.mod-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+.mod-two-col > .ai p {
+  font-size: 16px;
+  line-height: 1.78;
+  color: var(--body-text);
+  margin-bottom: 22px;
+}
+
+/* ── Highlights list ── */
+.mod-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mod-hl-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  box-shadow: 0 2px 12px rgba(0,0,0,.04);
+  transition: all .3s ease;
+}
+.mod-sec-cream .mod-hl-item { background: var(--white); }
+.mod-hl-item:hover {
+  border-color: var(--yellow);
+  background: var(--yellow-pale);
+  transform: translateX(4px);
+}
+.mod-hl-icon {
+  font-size: 24px;
+  width: 46px; height: 46px;
+  background: rgba(245,200,0,.15);
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.mod-hl-item h4 { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
+.mod-hl-item p { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+/* ── Levels (3 cards) ── */
+.mod-levels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.mod-level {
+  padding: 36px 30px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--rlg);
+  background: var(--white);
+  box-shadow: 0 2px 16px rgba(0,0,0,.05);
+  transition: all .35s ease;
+}
+.mod-level:hover {
+  border-color: var(--yellow);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(245,200,0,.18);
+}
+.mod-level-num {
+  font-family: var(--font-display);
+  font-size: 52px;
+  color: rgba(245,200,0,.25);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.mod-level-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.mod-level-badge.iniciante { background: rgba(37,211,102,.12); color: #1a8f47; }
+.mod-level-badge.intermediario { background: rgba(245,200,0,.2); color: var(--yellow-dark); }
+.mod-level-badge.avancado { background: rgba(220,50,50,.1); color: #b03030; }
+.mod-level h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  letter-spacing: .03em;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.mod-level p { font-size: 13px; color: var(--gray); line-height: 1.65; margin-bottom: 18px; }
+.mod-level-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.mod-level-list li {
+  font-size: 12px;
+  color: var(--body-text);
+  padding-left: 16px;
+  position: relative;
+}
+.mod-level-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--yellow-dark);
+  font-size: 11px;
+}
+
+/* ── Schedule ── */
+.mod-schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.mod-sch-day {
+  background: var(--black);
+  border-radius: var(--r);
+  padding: 28px;
+}
+.mod-sch-label {
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: .05em;
+  color: var(--yellow);
+  margin-bottom: 14px;
+}
+.mod-sch-times {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mod-sch-times span {
+  font-size: 13px;
+  color: rgba(255,255,255,.7);
+}
+.mod-sch-obs {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 12px;
+  color: rgba(0,0,0,.5);
+}
+
+/* ── How-to steps ── */
+.mod-how {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mod-how-step {
+  flex: 1;
+  min-width: 180px;
+  max-width: 240px;
+  text-align: center;
+}
+.mod-how-num {
+  width: 52px; height: 52px;
+  background: var(--black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--yellow);
+  margin: 0 auto 14px;
+}
+.mod-how-step p { font-size: 13px; color: rgba(0,0,0,.65); line-height: 1.6; }
+.mod-how-arrow {
+  font-size: 24px;
+  color: rgba(0,0,0,.35);
+  flex-shrink: 0;
+}
+
+/* ── Stats ── */
+.mod-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.mod-stat {
+  background: var(--black);
+  border-radius: var(--rlg);
+  padding: 40px 28px;
+  text-align: center;
+}
+.mod-stat-num {
+  font-family: var(--font-display);
+  font-size: 64px;
+  color: var(--yellow);
+  line-height: 1;
+  margin-bottom: 12px;
+  letter-spacing: .02em;
+}
+.mod-stat p { font-size: 13px; color: rgba(255,255,255,.6); line-height: 1.6; }
+
+/* ── Events list ── */
+.mod-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.mod-event-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: var(--black);
+  border-radius: var(--r);
+  padding: 22px 26px;
+  transition: transform .3s;
+}
+.mod-event-item:hover { transform: translateX(6px); }
+.mod-event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+}
+.mod-event-day {
+  font-family: var(--font-display);
+  font-size: 34px;
+  color: var(--yellow);
+  line-height: 1;
+}
+.mod-event-month {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.4);
+  text-transform: uppercase;
+}
+.mod-event-info { flex: 1; }
+.mod-event-info h4 { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+.mod-event-info p { font-size: 12px; color: rgba(255,255,255,.5); line-height: 1.5; }
+.mod-event-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 50px;
+  border: 1px solid rgba(245,200,0,.4);
+  color: var(--yellow);
+  white-space: nowrap;
+}
+
+/* ── CTA section ── */
+.mod-cta {
+  padding: 80px 0;
+  background: var(--black);
+}
+.mod-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* ══ RESPONSIVE ══ */
+@media (max-width: 900px) {
+  .mod-two-col { grid-template-columns: 1fr; gap: 40px; }
+  .mod-levels { grid-template-columns: 1fr; gap: 16px; }
+  .mod-stats { grid-template-columns: 1fr; gap: 16px; }
+  .mod-schedule { grid-template-columns: 1fr; max-width: 420px; }
+  .mod-how-arrow { display: none; }
+  .mod-how-step { min-width: 150px; }
+  .mod-cta-inner { flex-direction: column; text-align: center; }
+}
+@media (max-width: 600px) {
+  .mod-hero { padding-bottom: 60px; min-height: 480px; }
+  .mod-event-item { flex-wrap: wrap; gap: 14px; }
+  .mod-event-tag { align-self: flex-start; }
+}

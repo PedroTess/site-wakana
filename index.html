@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Makana Va'a — Clube de Canoa Havaiana no Espírito Santo. Paddle, conecte e transforme sua vida.">
+  <title>Makana Va'a — Canoa Havaiana | Espírito Santo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">
+      <img src="src/img/logo.png" alt="Makana Va'a" style="height:60px;width:auto;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#corporativo">Corporativo</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-actions" style="display:flex;align-items:center;gap:14px">
+      <a href="https://wa.me/5527999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Makana%20Va'a" class="btn btn-primary" target="_blank" rel="noopener">Aula Experimental</a>
+      <button class="hamburger" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mob-menu">
+  <a href="#inicio"       onclick="cMenu()">Início</a>
+  <a href="#sobre"        onclick="cMenu()">Sobre</a>
+  <a href="#beneficios"   onclick="cMenu()">Benefícios</a>
+  <a href="#corporativo"  onclick="cMenu()">Corporativo</a>
+  <a href="#contato"      onclick="cMenu()">Contato</a>
+  <a href="#planos"      onclick="cMenu()">Planos</a>
+  <a href="https://wa.me/5527999999999" class="btn btn-primary" target="_blank">Aula Experimental</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="inicio">
+  <div class="hero-bg" id="hbg2"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-stripe"></div>
+  <div class="hero-content">
+    <h1 class="hero-h1">
+      <span class="acc">Canoa</span>
+      Havaiana
+    </h1>
+    <p class="hero-p">O Clube de Canoa Havaiana do Espírito Santo.<br>Uma experiência que vai além do esporte.</p>
+    <div class="hero-btns">
+      <a href="#modalidades" class="btn btn-primary">Quero Remar →</a>
+      <a href="#sobre" class="btn btn-outline">Conheça a Makana</a>
+    </div>
+  </div>
+  <div class="scroll-ind" onclick="scrollTo2('sobre')">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══ SOBRE ══ -->
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-text ai">
+        <span class="sec-label">Wa'a — A Tradição Havaiana</span>
+        <h2 class="sec-title">Mais de 2000 Anos<br>de História</h2>
+        <p>A canoa havaiana tem raízes nos povos polinésios que navegaram o Oceano Pacífico há cerca de dois mil anos. Muito além de um esporte, o Wa'a representa uma filosofia de vida baseada em sobrevivência, comunidade e conexão com o oceano.</p>
+        <p>Na Makana Va'a, levamos essa tradição milenar às águas do Espírito Santo, criando uma experiência transformadora para cada remador.</p>
+      </div>
+      <div class="sobre-img-wrap ai d3">
+        <div class="sobre-ring r2"></div>
+        <div class="sobre-ring r1"></div>
+        <div class="sobre-circle">
+          <img src="src/img/sobre.jpg" alt="Canoa Havaiana" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BENEFÍCIOS ══ -->
+<section id="beneficios">
+  <div class="container">
+    <div class="ben-head ai">
+      <span class="sec-label">Transformação Completa</span>
+      <h2 class="sec-title">Por que praticar<br>Canoa Havaiana?</h2>
+      <p class="sec-sub">Benefícios que vão muito além da água impactando seu corpo, mente e relações.</p>
+    </div>
+    <div class="ben-cols">
+      <div>
+        <div class="ben-col-title ai">💪 Saúde Física &amp; Mental</div>
+        <div class="bcard ai d1"><div class="bcard-icon">🏋️</div><div class="bcard-text"><h4>Melhoria do Condicionamento Físico</h4><p>Fortalece costas, braços e core de forma completa e progressiva.</p></div></div>
+        <div class="bcard ai d2"><div class="bcard-icon">❤️</div><div class="bcard-text"><h4>Capacidade Cardiorrespiratória</h4><p>Exercício aeróbico completo que melhora resistência e vitalidade.</p></div></div>
+        <div class="bcard ai d3"><div class="bcard-icon">🌿</div><div class="bcard-text"><h4>Redução do Estresse</h4><p>O contato com água e natureza promove relaxamento profundo.</p></div></div>
+        <div class="bcard ai d5"><div class="bcard-icon">🧘</div><div class="bcard-text"><h4>Saúde Mental e Bem-Estar</h4><p>Reduz ansiedade e depressão através do movimento e comunidade.</p></div></div>
+      </div>
+      <div>
+        <div class="ben-col-title ai d1">🤝 Liderança &amp; Trabalho em Equipe</div>
+        <div class="bcard ai d2"><div class="bcard-icon">👑</div><div class="bcard-text"><h4>Liderança Colaborativa</h4><p>Tomada de decisões rápidas em equipe e sob pressão real.</p></div></div>
+        <div class="bcard ai d3"><div class="bcard-icon">💬</div><div class="bcard-text"><h4>Comunicação Eficiente</h4><p>Sincronia e clareza na transmissão de mensagens no grupo.</p></div></div>
+        <div class="bcard ai d4"><div class="bcard-icon">⚡</div><div class="bcard-text"><h4>Resiliência e Adaptação</h4><p>Aprenda a lidar com condições adversas e superar desafios.</p></div></div>
+        <div class="bcard ai d5"><div class="bcard-icon">🛡️</div><div class="bcard-text"><h4>Apoio Mútuo e Confiança</h4><p>Espírito de equipe genuíno que se estende além da canoa.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MODALIDADES ══ -->
+<section id="modalidades">
+  <div class="container">
+    <div class="mod-head ai">
+      <span class="sec-label">Como participar</span>
+      <h2 class="sec-title">Modalidades</h2>
+      <p class="sec-sub" style="margin:0 auto">Uma experiência para cada momento e objetivo da sua vida.</p>
+    </div>
+    <div class="mod-grid">
+      <a href="modalidade-aulas.html" class="mcard ai d1">
+        <span class="mcard-emoji">🚣</span>
+        <h3>Aulas Regulares</h3>
+        <p>Treinos semanais para todos os níveis, do iniciante ao avançado, com acompanhamento técnico especializado.</p>
+        <div class="mcard-arr">→</div>
+      </a>
+      <a href="modalidade-passeios.html" class="mcard ai d2">
+        <span class="mcard-emoji">🌅</span>
+        <h3>Passeios</h3>
+        <p>Experiências únicas no mar ao nascer e pôr do sol. Conexão total com a natureza e momentos inesquecíveis.</p>
+        <div class="mcard-arr">→</div>
+      </a>
+      <a href="modalidade-corporativo.html" class="mcard ai d3">
+        <span class="mcard-emoji">🏢</span>
+        <h3>Corporativo</h3>
+        <p>Workshops de liderança e team building para sua empresa. Desenvolva talentos no ambiente mais poderoso da natureza.</p>
+        <div class="mcard-arr">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CORPORATIVO ══ -->
+<section id="corporativo">
+  <div class="container">
+    <div class="corp-head ai">
+      <span class="sec-label">Para empresas</span>
+      <h2 class="sec-title">Sua Empresa no Mar</h2>
+      <p class="sec-sub">A canoa havaiana como ferramenta de desenvolvimento organizacional. Resultados reais, experiências transformadoras.</p>
+    </div>
+    <div class="corp-grid">
+      <div class="ccrd ai d1"><div class="ccrd-num">01</div><h4>Corporativa</h4><p>Workshop de Liderança e Trabalho em Equipe no mar</p></div>
+      <div class="ccrd ai d2"><div class="ccrd-num">02</div><h4>Branding e Visibilidade</h4><p>Patrocínio de equipamentos e eventos de alto impacto</p></div>
+      <div class="ccrd ai d3"><div class="ccrd-num">03</div><h4>Programa de Bem-Estar</h4><p>Sessões semanais e mensais para seus funcionários</p></div>
+      <div class="ccrd ai d4"><div class="ccrd-num">04</div><h4>Alianças Estratégicas</h4><p>Parceria com academias e centros de saúde locais</p></div>
+      <div class="ccrd ai d5"><div class="ccrd-num">05</div><h4>Patrocínio Social</h4><p>Apoio a jovens líderes e desenvolvimento comunitário</p></div>
+    </div>
+    <div class="corp-cta ai">
+      <a href="https://wa.me/5527999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20proposta%20corporativa%20da%20Makana%20Va'a" class="btn btn-primary" target="_blank" rel="noopener">Quero uma proposta</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALERIA ══ -->
+<section id="galeria">
+  <div class="container">
+    <div class="gal-head ai">
+      <span class="sec-label">Momentos</span>
+      <h2 class="sec-title">Nossa Galeria</h2>
+      <p class="sec-sub" style="margin:0 auto">Cada remada conta uma história. Venha escrever a sua.</p>
+    </div>
+    <div class="gal-grid ai d2">
+      <div class="gal-item" onclick="openLb('src/img/gallery-1.jpg')">
+        <img src="src/img/gallery-1.jpg" alt="Galeria 1" loading="lazy">
+        <div class="gal-ov"><div class="gal-zoom">⊕</div></div>
+      </div>
+      <div class="gal-item" onclick="openLb('src/img/gallery-2.jpg')">
+        <img src="src/img/gallery-2.jpg" alt="Galeria 2" loading="lazy">
+        <div class="gal-ov"><div class="gal-zoom">⊕</div></div>
+      </div>
+      <div class="gal-item" onclick="openLb('src/img/gallery-3.jpg')">
+        <img src="src/img/gallery-3.jpg" alt="Galeria 3" loading="lazy">
+        <div class="gal-ov"><div class="gal-zoom">⊕</div></div>
+      </div>
+      <div class="gal-item" onclick="openLb('src/img/gallery-4.jpg')">
+        <img src="src/img/gallery-4.jpg" alt="Galeria 4" loading="lazy">
+        <div class="gal-ov"><div class="gal-zoom">⊕</div></div>
+      </div>
+      <div class="gal-item" onclick="openLb('src/img/gallery-5.jpg')">
+        <img src="src/img/gallery-5.jpg" alt="Galeria 5" loading="lazy">
+        <div class="gal-ov"><div class="gal-zoom">⊕</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="ft-top">
+      <div>
+        <span class="ft-logo">MAKANA VA'A</span>
+        <p class="ft-tag">Clube de Canoa Havaiana — Espírito Santo, Brasil. Paddle. Conecte. Transforme.</p>
+        <div class="ft-social">
+          <a href="https://instagram.com/makanavaa" class="ft-soc" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+          <a href="https://wa.me/5527999999999" class="ft-soc" target="_blank" rel="noopener" aria-label="WhatsApp">📱</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-t">Navegação</div>
+        <nav class="ft-links">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#modalidades">Modalidades</a>
+          <a href="#Planos">Planos</a>
+          <a href="#corporativo">Corporativo</a>
+        </nav>
+      </div>
+      <div>
+        <div class="ft-col-t">Contato</div>
+        <nav class="ft-links">
+          <a href="https://wa.me/5527999999999" target="_blank">WhatsApp</a>
+          <a href="https://instagram.com/makanavaa" target="_blank">@makanavaa</a>
+          <a href="#contato">Fale Conosco</a>
+        </nav>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span class="ft-copy">© 2025 Makana Va'a — Todos os direitos reservados</span>
+      <a href="https://instagram.com/makanavaa" class="ft-insta" target="_blank">@makanavaa</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lb" onclick="closeLb()">
+  <button class="lb-close" onclick="closeLb()">✕</button>
+  <img id="lb-img" src="" alt="Galeria Makana Va'a">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
